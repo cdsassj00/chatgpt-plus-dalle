@@ -1,7 +1,7 @@
 import streamlit as st
 import openai
 
-openai.api_key = "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"
+openai.api_key = st.secrets["api_key"]
 st.title("지영,세린,승철 아빠가 원하는 그림을 그려준다")
 
 with st.form("form"):
